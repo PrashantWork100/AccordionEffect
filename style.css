@@ -7,6 +7,7 @@
 body {
     height: 100vh; 
     width: 100vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .navbar{
@@ -60,12 +61,13 @@ a:hover{
 .heading{
     height: 10vh;
     width: auto;
-    background-color: antiquewhite;
-    font-size: 2vw;
+    background-color: rgb(54, 54, 54);
+    font-size: 1.5vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
+    margin-top: 10px;
+    color: #fff;
+    /* border-radius: 10px; */
 }
 
 .heading:hover{
@@ -77,30 +79,32 @@ i{
     padding: 10px;
 }
 
-
-
-
-.desc{
-    height: 30vh;
-    font-size: 30px;
-    padding: 20px;
+.desc {
+    font-size: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgb(95, 93, 93);
     color: #fff;
-    display: none;
-    animation-name: dropDown;
-    animation-duration: 0.5s;
-   
+    /* padding: 10px; */
+    height: 0px;
+    transition: all 0.5s ease;
+
 }
 
-@keyframes dropDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }}
+
+.fulldesc {
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(95, 93, 93);
+    color: #fff;
+    padding: 10px;
+    height: 100px;
+    transition: all 0.5s ease;
+    /* transition: font-size 0.3s ease; */
+
+}
 
 
-    
+
+i:hover .heading{
+    color: #000;
+}
